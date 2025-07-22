@@ -27,9 +27,6 @@ importers:
         specifier: ^16.8.0 || ^17.0.0 || ^18.0.0
         version: 18.3.1(react@18.3.1)
     devDependencies:
-      '@repo/tsconfig':
-        specifier: workspace:*
-        version: link:../tsconfig
       '@types/react':
         specifier: ^19.0.12
         version: 19.1.8
@@ -46,8 +43,6 @@ importers:
       '@rollup/rollup-linux-x64-gnu':
         specifier: 4.9.5
         version: 4.9.5
-
-  packages/tsconfig: {}
 
 packages:
 
