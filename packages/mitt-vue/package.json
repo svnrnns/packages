@@ -1,0 +1,69 @@
+{
+  "name": "mitt-vue",
+  "version": "2.1.2",
+  "description": "Lightweight utility for integrating mitt with Vue 2 and Vue 3",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/mitt-vue.cjs",
+  "module": "dist/mitt-vue.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    "import": "./dist/mitt-vue.js",
+    "require": "./dist/mitt-vue.cjs",
+    "types": "./dist/index.d.ts"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "vite build",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "vue",
+    "vue2",
+    "vue3",
+    "event-emitter",
+    "mitt",
+    "event-management",
+    "vue-events",
+    "event-subscription",
+    "event-handling",
+    "vue-components",
+    "mitt-integration",
+    "event-listener",
+    "vue-utility",
+    "vue-event-emitter",
+    "event-emitters-in-vue",
+    "vue-hook-for-events",
+    "event-management-library",
+    "vue-event-handling",
+    "vue-event-system",
+    "event-bus-vue",
+    "vue-event-listener",
+    "vue2-event-handling",
+    "vue3-event-handling"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/svnrnns/packages/tree/main/packages/mitt-vue"
+  },
+  "homepage": "https://github.com/svnrnns/packages/tree/main/packages/mitt-vue",
+  "bugs": {
+    "url": "https://github.com/svnrnns/packages/issues"
+  },
+  "author": "seven rings (https://twitter.com/svnrnns)",
+  "dependencies": {
+    "mitt": "3.0.1",
+    "vue": "^2.6.0 || ^3.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "4.5.2",
+    "typescript": "^5.7.2",
+    "vite": "^4.0.0",
+    "vite-plugin-dts": "^2.3.0"
+  }
+}
