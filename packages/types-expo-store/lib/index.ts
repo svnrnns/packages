@@ -15,9 +15,6 @@ const set = <T>(key: string, value: T) => defaultStore.set(key, value);
 const setAsync = async <T>(key: string, value: T) =>
   await defaultStore.setAsync(key, value);
 
-const setWithExpiration = <T>(key: string, value: T, ttl: number) =>
-  defaultStore.setWithExpiration(key, value, ttl);
-
 const setAsyncWithExpiration = async <T>(key: string, value: T, ttl: number) =>
   await defaultStore.setAsyncWithExpiration(key, value, ttl);
 
@@ -45,7 +42,6 @@ export {
   getAsync,
   set,
   setAsync,
-  setWithExpiration,
   setAsyncWithExpiration,
   exists,
   existsAsync,

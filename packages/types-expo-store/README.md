@@ -112,7 +112,6 @@ const user = await getAsync('user', { id: 0 }, userSchema);
 - `setAsync<T>(key, value)` — Store a value (async).
 - `get<T>(key, fallback, schema)` — Retrieve and validate a value.
 - `getAsync<T>(key, fallback, schema)` — Retrieve and validate a value (async).
-- `setWithExpiration<T>(key, value, ttl)` — Store a value with expiration.
 - `setWithAsyncExpiration<T>(key, value, ttl)` — Store a value with expiration (async).
 - `removeAsync(key)` — Remove a key (async).
 - `exists(key)` — Check if a key exists.

@@ -103,18 +103,6 @@ export class TypeSafeStore {
    * @param value - The value to store. Can be anything.
    * @param ttl - Time to live in milliseconds.
    */
-  setWithExpiration<T>(key: string, value: T, ttl: number) {
-    const toStore = this.setFn(key, value);
-    SecureStore.setItem(toStore.key, toStore.value);
-    setTimeout(() => SecureStore.deleteItem(toStore.key), ttl);
-  }
-
-  /**
-   * Stores a value in the store with an expiration time. Always run as async due to expo-secure-store API limitations
-   * @param key - The key to store the value under.
-   * @param value - The value to store. Can be anything.
-   * @param ttl - Time to live in milliseconds.
-   */
   async setAsyncWithExpiration<T>(key: string, value: T, ttl: number) {
     const toStore = this.setFn(key, value);
     await SecureStore.setItemAsync(toStore.key, toStore.value);
