@@ -1,0 +1,38 @@
+{
+  "name": "types-expo-store",
+  "version": "1.0.0",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "react-native": "dist/index.cjs",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "tsup",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "license": "MIT",
+  "author": "seven rings (https://twitter.com/svnrnns)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/svnrnns/packages/tree/main/packages/types-expo-store"
+  },
+  "homepage": "https://github.com/svnrnns/packages/tree/main/packages/types-expo-store",
+  "bugs": {
+    "url": "https://github.com/svnrnns/packages/issues"
+  },
+  "dependencies": {
+    "expo-secure-store": "^14.2.3",
+    "zod": "^3.22.2"
+  },
+  "devDependencies": {
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.0"
+  }
+}
